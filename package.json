@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc && node dist/compiler/index.js",
+    "start": "npm run build && node -r esbuild-register runtime/index.ts"
+  },
+  "keywords": [],
+  "author": "Jayden",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.34"
+  },
+  "dependencies": {
+    "typescript": "^4.7.3",
+    "esbuild": "^0.14.39",
+    "esbuild-register": "^3.3.2"
+  }
+}
